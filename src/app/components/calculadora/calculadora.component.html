@@ -1,1 +1,20 @@
-<p>calculadora works!</p>
+<div class="calculator">
+  <input
+    type="text"
+    class="calculator-display"
+    [value]="currentInput"
+    disabled
+  />
+
+  <div class="calculator-buttons">
+    <div *ngFor="let row of buttonRows" class="calculator-rows">
+      <button
+        *ngFor="let button of row"
+        (click)="handleButtonClick(button)"
+        class="button"
+      >
+        {{ button }}
+      </button>
+    </div>
+  </div>
+</div>

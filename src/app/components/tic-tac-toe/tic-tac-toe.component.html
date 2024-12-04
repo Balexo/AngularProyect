@@ -1,1 +1,5 @@
-<p>tic-tac-toe works!</p>
+<div class="tic-tac-toe">
+  <div *ngFor="let row of matrix" class="rows">
+    <div *ngFor="let position of row" class="columns"></div>
+  </div>
+</div>
