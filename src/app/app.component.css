@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.rightContainer {
+  flex: 1;
+}
+
+.leftContainer {
+  flex: 2;
+}
