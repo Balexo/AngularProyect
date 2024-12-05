@@ -1,5 +1,16 @@
 <div class="tic-tac-toe">
-  <div *ngFor="let row of matrix" class="rows">
-    <div *ngFor="let position of row" class="columns"></div>
+  <div *ngFor="let row of matrix; let rowIndex = index" class="rows">
+    <button
+      *ngFor="let position of row; let columnIndex = index"
+      class="columns"
+      (click)="counterClick(rowIndex, columnIndex)"
+      [ngClass]="{
+        blue: position === 'X',
+        red: position === 'O'
+      }"
+    >
+      {{ position }}
+    </button>
   </div>
+  <button routerLink="/" class="classButton">Volver a inicio</button>
 </div>

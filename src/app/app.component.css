@@ -4,9 +4,9 @@
   height: 100vh;
 }
 .rightContainer {
-  flex: 1;
+  flex: 2;
 }
 
 .leftContainer {
-  flex: 2;
+  flex: 1;
 }
